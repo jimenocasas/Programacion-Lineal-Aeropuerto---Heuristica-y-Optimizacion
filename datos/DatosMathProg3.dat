@@ -1,0 +1,81 @@
+data;
+
+#Definicion de los set
+
+set AVIONES := AV1, AV2, AV3, AV4, AV5;
+set TARIFAS := ESTANDAR, LEISURE, BUSINESS;
+set PISTAS := PISTA1, PISTA2, PISTA3, PISTA4;
+set SLOTS := 1, 2, 3, 4, 5, 6, 7;
+
+
+#Definición de param
+
+param hora_programada :=
+    AV1 550,  # 9:10 AM -> 9*60 + 10 = 550 minutos
+    AV2 535  # 8:55 AM -> 8*60 + 55 = 535 minutos
+    AV3 580  # 9:40 AM -> 9*60 + 40 = 580 minutos
+    AV4 595  # 9:55 AM -> 9*60 + 55 = 595 minutos
+    AV5 610;  # 10:10 AM -> 10*60 + 10 = 610 minutos
+
+param hora_limite :=
+    AV1 615  # 10:15 AM -> 10*60 + 15 = 615 minutos
+    AV2 570  # 9:30 AM -> 9*60 + 30 = 570 minutos
+    AV3 600  # 10:00 AM -> 10*60 = 600 minutos
+    AV4 615  # 10:15 AM -> 10*60 + 15 = 615 minutos
+    AV5 630;  # 10:30 AM -> 10*60 + 30 = 630 minutos
+
+param hora_llegada :=
+    1 540  # 9:00 AM -> 9*60 = 540 minutos
+    2 555  # 9:15 AM -> 9*60 + 15 = 555 minutos
+    3 570  # 9:30 AM -> 9*60 + 30 = 570 minutos
+    4 585  # 9:45 AM -> 9*60 + 45 = 585 minutos
+    5 600  # 10:00 AM -> 10*60 = 600 minutos
+    6 615  # 10:15 AM -> 10*60 + 15 = 615 minutos
+    7 630; #10:30 AM -> 10*60 + 30 = 630 minutos
+
+param costes:=
+
+    AV1 100
+    AV2 200
+    AV3 150
+    AV4 250
+    AV5 200;
+
+param slot_disponible_en_pista :=
+    [PISTA1, 1] 0, [PISTA1, 2] 0, [PISTA1, 3] 0, [PISTA1, 4] 0, [PISTA1, 5] 1, [PISTA1, 6] 1, [PISTA1, 7] 0,
+    [PISTA2, 1] 0, [PISTA2, 2] 0, [PISTA2, 3] 1, [PISTA2, 4] 1, [PISTA2, 5] 0, [PISTA2, 6] 0, [PISTA2, 7] 0,
+    [PISTA3, 1] 1, [PISTA3, 2] 1, [PISTA3, 3] 1, [PISTA3, 4] 0, [PISTA3, 5] 0, [PISTA3, 6] 1, [PISTA3, 7] 0,
+    [PISTA4, 1] 1, [PISTA4, 2] 0, [PISTA4, 3] 0, [PISTA4, 4] 0, [PISTA4, 5] 1, [PISTA4, 6] 1, [PISTA4, 7] 0;
+
+param M := 10000;
+
+param asientos := 
+    AV1 90
+    AV2 120
+    AV3 200
+    AV4 150
+    AV5 190;
+
+param capacidad :=
+    AV1 1700
+    AV2 2700
+    AV3 1300
+    AV4 1700
+    AV5 2000;
+
+param precio :=
+    ESTANDAR 19
+    LEISURE 49
+    BUSINESS 69;
+
+param equipaje :=
+    ESTANDAR 1
+    LEISURE 20
+    BUSINESS 40;
+
+param billetes_minimos_Leisure 20;
+param billetes_minimos_Business 10;
+
+param porcentaje_minimo_Estandar 0.6;
+
+end;

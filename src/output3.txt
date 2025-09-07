@@ -1,0 +1,1523 @@
+Problem:    Mathprog3
+Rows:       595
+Columns:    155 (155 integer, 140 binary)
+Non-zeros:  1150
+Status:     INTEGER OPTIMAL
+Objective:  Beneficio = 21690 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 Beneficio               21690                             
+     2 Restriccion_Asientos[AV1]
+                                  90                          90 
+     3 Restriccion_Asientos[AV2]
+                                 120                         120 
+     4 Restriccion_Asientos[AV3]
+                                 200                         200 
+     5 Restriccion_Asientos[AV4]
+                                 150                         150 
+     6 Restriccion_Asientos[AV5]
+                                 190                         190 
+     7 Restriccion_Capacidad[AV1]
+                                1698                        1700 
+     8 Restriccion_Capacidad[AV2]
+                                2700                        2700 
+     9 Restriccion_Capacidad[AV3]
+                                1295                        1300 
+    10 Restriccion_Capacidad[AV4]
+                                1700                        1700 
+    11 Restriccion_Capacidad[AV5]
+                                1997                        2000 
+    12 Restriccion_Billetes_Leisure[AV1]
+                                  21            20               
+    13 Restriccion_Billetes_Leisure[AV2]
+                                  27            20               
+    14 Restriccion_Billetes_Leisure[AV3]
+                                  33            20               
+    15 Restriccion_Billetes_Leisure[AV4]
+                                  20            20               
+    16 Restriccion_Billetes_Leisure[AV5]
+                                  52            20               
+    17 Restriccion_Billetes_Business[AV1]
+                                  31            10               
+    18 Restriccion_Billetes_Business[AV2]
+                                  53            10               
+    19 Restriccion_Billetes_Business[AV3]
+                                  12            10               
+    20 Restriccion_Billetes_Business[AV4]
+                                  30            10               
+    21 Restriccion_Billetes_Business[AV5]
+                                  21            10               
+    22 Rstriccion_Billetes_Estandar
+                                   0            -0               
+    23 Restriccion_1_slot_por_avion[AV1]
+                                   1             1             = 
+    24 Restriccion_1_slot_por_avion[AV2]
+                                   1             1             = 
+    25 Restriccion_1_slot_por_avion[AV3]
+                                   1             1             = 
+    26 Restriccion_1_slot_por_avion[AV4]
+                                   1             1             = 
+    27 Restriccion_1_slot_por_avion[AV5]
+                                   1             1             = 
+    28 Restriccion_1_avion_por_slot[PISTA1,1]
+                                   0                           1 
+    29 Restriccion_1_avion_por_slot[PISTA1,2]
+                                   0                           1 
+    30 Restriccion_1_avion_por_slot[PISTA1,3]
+                                   0                           1 
+    31 Restriccion_1_avion_por_slot[PISTA1,4]
+                                   0                           1 
+    32 Restriccion_1_avion_por_slot[PISTA1,5]
+                                   1                           1 
+    33 Restriccion_1_avion_por_slot[PISTA1,6]
+                                   0                           1 
+    34 Restriccion_1_avion_por_slot[PISTA1,7]
+                                   0                           1 
+    35 Restriccion_1_avion_por_slot[PISTA2,1]
+                                   0                           1 
+    36 Restriccion_1_avion_por_slot[PISTA2,2]
+                                   0                           1 
+    37 Restriccion_1_avion_por_slot[PISTA2,3]
+                                   0                           1 
+    38 Restriccion_1_avion_por_slot[PISTA2,4]
+                                   1                           1 
+    39 Restriccion_1_avion_por_slot[PISTA2,5]
+                                   0                           1 
+    40 Restriccion_1_avion_por_slot[PISTA2,6]
+                                   0                           1 
+    41 Restriccion_1_avion_por_slot[PISTA2,7]
+                                   0                           1 
+    42 Restriccion_1_avion_por_slot[PISTA3,1]
+                                   0                           1 
+    43 Restriccion_1_avion_por_slot[PISTA3,2]
+                                   1                           1 
+    44 Restriccion_1_avion_por_slot[PISTA3,3]
+                                   0                           1 
+    45 Restriccion_1_avion_por_slot[PISTA3,4]
+                                   0                           1 
+    46 Restriccion_1_avion_por_slot[PISTA3,5]
+                                   0                           1 
+    47 Restriccion_1_avion_por_slot[PISTA3,6]
+                                   0                           1 
+    48 Restriccion_1_avion_por_slot[PISTA3,7]
+                                   0                           1 
+    49 Restriccion_1_avion_por_slot[PISTA4,1]
+                                   1                           1 
+    50 Restriccion_1_avion_por_slot[PISTA4,2]
+                                   0                           1 
+    51 Restriccion_1_avion_por_slot[PISTA4,3]
+                                   0                           1 
+    52 Restriccion_1_avion_por_slot[PISTA4,4]
+                                   0                           1 
+    53 Restriccion_1_avion_por_slot[PISTA4,5]
+                                   0                           1 
+    54 Restriccion_1_avion_por_slot[PISTA4,6]
+                                   1                           1 
+    55 Restriccion_1_avion_por_slot[PISTA4,7]
+                                   0                           1 
+    56 Restriccion_slot_libre[AV1,PISTA1,1]
+                                   0                          -0 
+    57 Restriccion_slot_libre[AV1,PISTA1,2]
+                                   0                          -0 
+    58 Restriccion_slot_libre[AV1,PISTA1,3]
+                                   0                          -0 
+    59 Restriccion_slot_libre[AV1,PISTA1,4]
+                                   0                          -0 
+    60 Restriccion_slot_libre[AV1,PISTA1,5]
+                                   0                           1 
+    61 Restriccion_slot_libre[AV1,PISTA1,6]
+                                   0                           1 
+    62 Restriccion_slot_libre[AV1,PISTA1,7]
+                                   0                          -0 
+    63 Restriccion_slot_libre[AV1,PISTA2,1]
+                                   0                          -0 
+    64 Restriccion_slot_libre[AV1,PISTA2,2]
+                                   0                          -0 
+    65 Restriccion_slot_libre[AV1,PISTA2,3]
+                                   0                           1 
+    66 Restriccion_slot_libre[AV1,PISTA2,4]
+                                   0                           1 
+    67 Restriccion_slot_libre[AV1,PISTA2,5]
+                                   0                          -0 
+    68 Restriccion_slot_libre[AV1,PISTA2,6]
+                                   0                          -0 
+    69 Restriccion_slot_libre[AV1,PISTA2,7]
+                                   0                          -0 
+    70 Restriccion_slot_libre[AV1,PISTA3,1]
+                                   0                           1 
+    71 Restriccion_slot_libre[AV1,PISTA3,2]
+                                   1                           1 
+    72 Restriccion_slot_libre[AV1,PISTA3,3]
+                                   0                           1 
+    73 Restriccion_slot_libre[AV1,PISTA3,4]
+                                   0                          -0 
+    74 Restriccion_slot_libre[AV1,PISTA3,5]
+                                   0                          -0 
+    75 Restriccion_slot_libre[AV1,PISTA3,6]
+                                   0                           1 
+    76 Restriccion_slot_libre[AV1,PISTA3,7]
+                                   0                          -0 
+    77 Restriccion_slot_libre[AV1,PISTA4,1]
+                                   0                           1 
+    78 Restriccion_slot_libre[AV1,PISTA4,2]
+                                   0                          -0 
+    79 Restriccion_slot_libre[AV1,PISTA4,3]
+                                   0                          -0 
+    80 Restriccion_slot_libre[AV1,PISTA4,4]
+                                   0                          -0 
+    81 Restriccion_slot_libre[AV1,PISTA4,5]
+                                   0                           1 
+    82 Restriccion_slot_libre[AV1,PISTA4,6]
+                                   0                           1 
+    83 Restriccion_slot_libre[AV1,PISTA4,7]
+                                   0                          -0 
+    84 Restriccion_slot_libre[AV2,PISTA1,1]
+                                   0                          -0 
+    85 Restriccion_slot_libre[AV2,PISTA1,2]
+                                   0                          -0 
+    86 Restriccion_slot_libre[AV2,PISTA1,3]
+                                   0                          -0 
+    87 Restriccion_slot_libre[AV2,PISTA1,4]
+                                   0                          -0 
+    88 Restriccion_slot_libre[AV2,PISTA1,5]
+                                   0                           1 
+    89 Restriccion_slot_libre[AV2,PISTA1,6]
+                                   0                           1 
+    90 Restriccion_slot_libre[AV2,PISTA1,7]
+                                   0                          -0 
+    91 Restriccion_slot_libre[AV2,PISTA2,1]
+                                   0                          -0 
+    92 Restriccion_slot_libre[AV2,PISTA2,2]
+                                   0                          -0 
+    93 Restriccion_slot_libre[AV2,PISTA2,3]
+                                   0                           1 
+    94 Restriccion_slot_libre[AV2,PISTA2,4]
+                                   0                           1 
+    95 Restriccion_slot_libre[AV2,PISTA2,5]
+                                   0                          -0 
+    96 Restriccion_slot_libre[AV2,PISTA2,6]
+                                   0                          -0 
+    97 Restriccion_slot_libre[AV2,PISTA2,7]
+                                   0                          -0 
+    98 Restriccion_slot_libre[AV2,PISTA3,1]
+                                   0                           1 
+    99 Restriccion_slot_libre[AV2,PISTA3,2]
+                                   0                           1 
+   100 Restriccion_slot_libre[AV2,PISTA3,3]
+                                   0                           1 
+   101 Restriccion_slot_libre[AV2,PISTA3,4]
+                                   0                          -0 
+   102 Restriccion_slot_libre[AV2,PISTA3,5]
+                                   0                          -0 
+   103 Restriccion_slot_libre[AV2,PISTA3,6]
+                                   0                           1 
+   104 Restriccion_slot_libre[AV2,PISTA3,7]
+                                   0                          -0 
+   105 Restriccion_slot_libre[AV2,PISTA4,1]
+                                   1                           1 
+   106 Restriccion_slot_libre[AV2,PISTA4,2]
+                                   0                          -0 
+   107 Restriccion_slot_libre[AV2,PISTA4,3]
+                                   0                          -0 
+   108 Restriccion_slot_libre[AV2,PISTA4,4]
+                                   0                          -0 
+   109 Restriccion_slot_libre[AV2,PISTA4,5]
+                                   0                           1 
+   110 Restriccion_slot_libre[AV2,PISTA4,6]
+                                   0                           1 
+   111 Restriccion_slot_libre[AV2,PISTA4,7]
+                                   0                          -0 
+   112 Restriccion_slot_libre[AV3,PISTA1,1]
+                                   0                          -0 
+   113 Restriccion_slot_libre[AV3,PISTA1,2]
+                                   0                          -0 
+   114 Restriccion_slot_libre[AV3,PISTA1,3]
+                                   0                          -0 
+   115 Restriccion_slot_libre[AV3,PISTA1,4]
+                                   0                          -0 
+   116 Restriccion_slot_libre[AV3,PISTA1,5]
+                                   0                           1 
+   117 Restriccion_slot_libre[AV3,PISTA1,6]
+                                   0                           1 
+   118 Restriccion_slot_libre[AV3,PISTA1,7]
+                                   0                          -0 
+   119 Restriccion_slot_libre[AV3,PISTA2,1]
+                                   0                          -0 
+   120 Restriccion_slot_libre[AV3,PISTA2,2]
+                                   0                          -0 
+   121 Restriccion_slot_libre[AV3,PISTA2,3]
+                                   0                           1 
+   122 Restriccion_slot_libre[AV3,PISTA2,4]
+                                   1                           1 
+   123 Restriccion_slot_libre[AV3,PISTA2,5]
+                                   0                          -0 
+   124 Restriccion_slot_libre[AV3,PISTA2,6]
+                                   0                          -0 
+   125 Restriccion_slot_libre[AV3,PISTA2,7]
+                                   0                          -0 
+   126 Restriccion_slot_libre[AV3,PISTA3,1]
+                                   0                           1 
+   127 Restriccion_slot_libre[AV3,PISTA3,2]
+                                   0                           1 
+   128 Restriccion_slot_libre[AV3,PISTA3,3]
+                                   0                           1 
+   129 Restriccion_slot_libre[AV3,PISTA3,4]
+                                   0                          -0 
+   130 Restriccion_slot_libre[AV3,PISTA3,5]
+                                   0                          -0 
+   131 Restriccion_slot_libre[AV3,PISTA3,6]
+                                   0                           1 
+   132 Restriccion_slot_libre[AV3,PISTA3,7]
+                                   0                          -0 
+   133 Restriccion_slot_libre[AV3,PISTA4,1]
+                                   0                           1 
+   134 Restriccion_slot_libre[AV3,PISTA4,2]
+                                   0                          -0 
+   135 Restriccion_slot_libre[AV3,PISTA4,3]
+                                   0                          -0 
+   136 Restriccion_slot_libre[AV3,PISTA4,4]
+                                   0                          -0 
+   137 Restriccion_slot_libre[AV3,PISTA4,5]
+                                   0                           1 
+   138 Restriccion_slot_libre[AV3,PISTA4,6]
+                                   0                           1 
+   139 Restriccion_slot_libre[AV3,PISTA4,7]
+                                   0                          -0 
+   140 Restriccion_slot_libre[AV4,PISTA1,1]
+                                   0                          -0 
+   141 Restriccion_slot_libre[AV4,PISTA1,2]
+                                   0                          -0 
+   142 Restriccion_slot_libre[AV4,PISTA1,3]
+                                   0                          -0 
+   143 Restriccion_slot_libre[AV4,PISTA1,4]
+                                   0                          -0 
+   144 Restriccion_slot_libre[AV4,PISTA1,5]
+                                   1                           1 
+   145 Restriccion_slot_libre[AV4,PISTA1,6]
+                                   0                           1 
+   146 Restriccion_slot_libre[AV4,PISTA1,7]
+                                   0                          -0 
+   147 Restriccion_slot_libre[AV4,PISTA2,1]
+                                   0                          -0 
+   148 Restriccion_slot_libre[AV4,PISTA2,2]
+                                   0                          -0 
+   149 Restriccion_slot_libre[AV4,PISTA2,3]
+                                   0                           1 
+   150 Restriccion_slot_libre[AV4,PISTA2,4]
+                                   0                           1 
+   151 Restriccion_slot_libre[AV4,PISTA2,5]
+                                   0                          -0 
+   152 Restriccion_slot_libre[AV4,PISTA2,6]
+                                   0                          -0 
+   153 Restriccion_slot_libre[AV4,PISTA2,7]
+                                   0                          -0 
+   154 Restriccion_slot_libre[AV4,PISTA3,1]
+                                   0                           1 
+   155 Restriccion_slot_libre[AV4,PISTA3,2]
+                                   0                           1 
+   156 Restriccion_slot_libre[AV4,PISTA3,3]
+                                   0                           1 
+   157 Restriccion_slot_libre[AV4,PISTA3,4]
+                                   0                          -0 
+   158 Restriccion_slot_libre[AV4,PISTA3,5]
+                                   0                          -0 
+   159 Restriccion_slot_libre[AV4,PISTA3,6]
+                                   0                           1 
+   160 Restriccion_slot_libre[AV4,PISTA3,7]
+                                   0                          -0 
+   161 Restriccion_slot_libre[AV4,PISTA4,1]
+                                   0                           1 
+   162 Restriccion_slot_libre[AV4,PISTA4,2]
+                                   0                          -0 
+   163 Restriccion_slot_libre[AV4,PISTA4,3]
+                                   0                          -0 
+   164 Restriccion_slot_libre[AV4,PISTA4,4]
+                                   0                          -0 
+   165 Restriccion_slot_libre[AV4,PISTA4,5]
+                                   0                           1 
+   166 Restriccion_slot_libre[AV4,PISTA4,6]
+                                   0                           1 
+   167 Restriccion_slot_libre[AV4,PISTA4,7]
+                                   0                          -0 
+   168 Restriccion_slot_libre[AV5,PISTA1,1]
+                                   0                          -0 
+   169 Restriccion_slot_libre[AV5,PISTA1,2]
+                                   0                          -0 
+   170 Restriccion_slot_libre[AV5,PISTA1,3]
+                                   0                          -0 
+   171 Restriccion_slot_libre[AV5,PISTA1,4]
+                                   0                          -0 
+   172 Restriccion_slot_libre[AV5,PISTA1,5]
+                                   0                           1 
+   173 Restriccion_slot_libre[AV5,PISTA1,6]
+                                   0                           1 
+   174 Restriccion_slot_libre[AV5,PISTA1,7]
+                                   0                          -0 
+   175 Restriccion_slot_libre[AV5,PISTA2,1]
+                                   0                          -0 
+   176 Restriccion_slot_libre[AV5,PISTA2,2]
+                                   0                          -0 
+   177 Restriccion_slot_libre[AV5,PISTA2,3]
+                                   0                           1 
+   178 Restriccion_slot_libre[AV5,PISTA2,4]
+                                   0                           1 
+   179 Restriccion_slot_libre[AV5,PISTA2,5]
+                                   0                          -0 
+   180 Restriccion_slot_libre[AV5,PISTA2,6]
+                                   0                          -0 
+   181 Restriccion_slot_libre[AV5,PISTA2,7]
+                                   0                          -0 
+   182 Restriccion_slot_libre[AV5,PISTA3,1]
+                                   0                           1 
+   183 Restriccion_slot_libre[AV5,PISTA3,2]
+                                   0                           1 
+   184 Restriccion_slot_libre[AV5,PISTA3,3]
+                                   0                           1 
+   185 Restriccion_slot_libre[AV5,PISTA3,4]
+                                   0                          -0 
+   186 Restriccion_slot_libre[AV5,PISTA3,5]
+                                   0                          -0 
+   187 Restriccion_slot_libre[AV5,PISTA3,6]
+                                   0                           1 
+   188 Restriccion_slot_libre[AV5,PISTA3,7]
+                                   0                          -0 
+   189 Restriccion_slot_libre[AV5,PISTA4,1]
+                                   0                           1 
+   190 Restriccion_slot_libre[AV5,PISTA4,2]
+                                   0                          -0 
+   191 Restriccion_slot_libre[AV5,PISTA4,3]
+                                   0                          -0 
+   192 Restriccion_slot_libre[AV5,PISTA4,4]
+                                   0                          -0 
+   193 Restriccion_slot_libre[AV5,PISTA4,5]
+                                   0                           1 
+   194 Restriccion_slot_libre[AV5,PISTA4,6]
+                                   1                           1 
+   195 Restriccion_slot_libre[AV5,PISTA4,7]
+                                   0                          -0 
+   196 Restriccion_hora_minimo[AV1,PISTA1,1]
+                                   0         -9990               
+   197 Restriccion_hora_minimo[AV1,PISTA1,2]
+                                   0        -10005               
+   198 Restriccion_hora_minimo[AV1,PISTA1,3]
+                                   0        -10020               
+   199 Restriccion_hora_minimo[AV1,PISTA1,4]
+                                   0        -10035               
+   200 Restriccion_hora_minimo[AV1,PISTA1,5]
+                                   0        -10050               
+   201 Restriccion_hora_minimo[AV1,PISTA1,6]
+                                   0        -10065               
+   202 Restriccion_hora_minimo[AV1,PISTA1,7]
+                                   0        -10080               
+   203 Restriccion_hora_minimo[AV1,PISTA2,1]
+                                   0         -9990               
+   204 Restriccion_hora_minimo[AV1,PISTA2,2]
+                                   0        -10005               
+   205 Restriccion_hora_minimo[AV1,PISTA2,3]
+                                   0        -10020               
+   206 Restriccion_hora_minimo[AV1,PISTA2,4]
+                                   0        -10035               
+   207 Restriccion_hora_minimo[AV1,PISTA2,5]
+                                   0        -10050               
+   208 Restriccion_hora_minimo[AV1,PISTA2,6]
+                                   0        -10065               
+   209 Restriccion_hora_minimo[AV1,PISTA2,7]
+                                   0        -10080               
+   210 Restriccion_hora_minimo[AV1,PISTA3,1]
+                                   0         -9990               
+   211 Restriccion_hora_minimo[AV1,PISTA3,2]
+                              -10000        -10005               
+   212 Restriccion_hora_minimo[AV1,PISTA3,3]
+                                   0        -10020               
+   213 Restriccion_hora_minimo[AV1,PISTA3,4]
+                                   0        -10035               
+   214 Restriccion_hora_minimo[AV1,PISTA3,5]
+                                   0        -10050               
+   215 Restriccion_hora_minimo[AV1,PISTA3,6]
+                                   0        -10065               
+   216 Restriccion_hora_minimo[AV1,PISTA3,7]
+                                   0        -10080               
+   217 Restriccion_hora_minimo[AV1,PISTA4,1]
+                                   0         -9990               
+   218 Restriccion_hora_minimo[AV1,PISTA4,2]
+                                   0        -10005               
+   219 Restriccion_hora_minimo[AV1,PISTA4,3]
+                                   0        -10020               
+   220 Restriccion_hora_minimo[AV1,PISTA4,4]
+                                   0        -10035               
+   221 Restriccion_hora_minimo[AV1,PISTA4,5]
+                                   0        -10050               
+   222 Restriccion_hora_minimo[AV1,PISTA4,6]
+                                   0        -10065               
+   223 Restriccion_hora_minimo[AV1,PISTA4,7]
+                                   0        -10080               
+   224 Restriccion_hora_minimo[AV2,PISTA1,1]
+                                   0        -10005               
+   225 Restriccion_hora_minimo[AV2,PISTA1,2]
+                                   0        -10020               
+   226 Restriccion_hora_minimo[AV2,PISTA1,3]
+                                   0        -10035               
+   227 Restriccion_hora_minimo[AV2,PISTA1,4]
+                                   0        -10050               
+   228 Restriccion_hora_minimo[AV2,PISTA1,5]
+                                   0        -10065               
+   229 Restriccion_hora_minimo[AV2,PISTA1,6]
+                                   0        -10080               
+   230 Restriccion_hora_minimo[AV2,PISTA1,7]
+                                   0        -10095               
+   231 Restriccion_hora_minimo[AV2,PISTA2,1]
+                                   0        -10005               
+   232 Restriccion_hora_minimo[AV2,PISTA2,2]
+                                   0        -10020               
+   233 Restriccion_hora_minimo[AV2,PISTA2,3]
+                                   0        -10035               
+   234 Restriccion_hora_minimo[AV2,PISTA2,4]
+                                   0        -10050               
+   235 Restriccion_hora_minimo[AV2,PISTA2,5]
+                                   0        -10065               
+   236 Restriccion_hora_minimo[AV2,PISTA2,6]
+                                   0        -10080               
+   237 Restriccion_hora_minimo[AV2,PISTA2,7]
+                                   0        -10095               
+   238 Restriccion_hora_minimo[AV2,PISTA3,1]
+                                   0        -10005               
+   239 Restriccion_hora_minimo[AV2,PISTA3,2]
+                                   0        -10020               
+   240 Restriccion_hora_minimo[AV2,PISTA3,3]
+                                   0        -10035               
+   241 Restriccion_hora_minimo[AV2,PISTA3,4]
+                                   0        -10050               
+   242 Restriccion_hora_minimo[AV2,PISTA3,5]
+                                   0        -10065               
+   243 Restriccion_hora_minimo[AV2,PISTA3,6]
+                                   0        -10080               
+   244 Restriccion_hora_minimo[AV2,PISTA3,7]
+                                   0        -10095               
+   245 Restriccion_hora_minimo[AV2,PISTA4,1]
+                              -10000        -10005               
+   246 Restriccion_hora_minimo[AV2,PISTA4,2]
+                                   0        -10020               
+   247 Restriccion_hora_minimo[AV2,PISTA4,3]
+                                   0        -10035               
+   248 Restriccion_hora_minimo[AV2,PISTA4,4]
+                                   0        -10050               
+   249 Restriccion_hora_minimo[AV2,PISTA4,5]
+                                   0        -10065               
+   250 Restriccion_hora_minimo[AV2,PISTA4,6]
+                                   0        -10080               
+   251 Restriccion_hora_minimo[AV2,PISTA4,7]
+                                   0        -10095               
+   252 Restriccion_hora_minimo[AV3,PISTA1,1]
+                                   0         -9960               
+   253 Restriccion_hora_minimo[AV3,PISTA1,2]
+                                   0         -9975               
+   254 Restriccion_hora_minimo[AV3,PISTA1,3]
+                                   0         -9990               
+   255 Restriccion_hora_minimo[AV3,PISTA1,4]
+                                   0        -10005               
+   256 Restriccion_hora_minimo[AV3,PISTA1,5]
+                                   0        -10020               
+   257 Restriccion_hora_minimo[AV3,PISTA1,6]
+                                   0        -10035               
+   258 Restriccion_hora_minimo[AV3,PISTA1,7]
+                                   0        -10050               
+   259 Restriccion_hora_minimo[AV3,PISTA2,1]
+                                   0         -9960               
+   260 Restriccion_hora_minimo[AV3,PISTA2,2]
+                                   0         -9975               
+   261 Restriccion_hora_minimo[AV3,PISTA2,3]
+                                   0         -9990               
+   262 Restriccion_hora_minimo[AV3,PISTA2,4]
+                              -10000        -10005               
+   263 Restriccion_hora_minimo[AV3,PISTA2,5]
+                                   0        -10020               
+   264 Restriccion_hora_minimo[AV3,PISTA2,6]
+                                   0        -10035               
+   265 Restriccion_hora_minimo[AV3,PISTA2,7]
+                                   0        -10050               
+   266 Restriccion_hora_minimo[AV3,PISTA3,1]
+                                   0         -9960               
+   267 Restriccion_hora_minimo[AV3,PISTA3,2]
+                                   0         -9975               
+   268 Restriccion_hora_minimo[AV3,PISTA3,3]
+                                   0         -9990               
+   269 Restriccion_hora_minimo[AV3,PISTA3,4]
+                                   0        -10005               
+   270 Restriccion_hora_minimo[AV3,PISTA3,5]
+                                   0        -10020               
+   271 Restriccion_hora_minimo[AV3,PISTA3,6]
+                                   0        -10035               
+   272 Restriccion_hora_minimo[AV3,PISTA3,7]
+                                   0        -10050               
+   273 Restriccion_hora_minimo[AV3,PISTA4,1]
+                                   0         -9960               
+   274 Restriccion_hora_minimo[AV3,PISTA4,2]
+                                   0         -9975               
+   275 Restriccion_hora_minimo[AV3,PISTA4,3]
+                                   0         -9990               
+   276 Restriccion_hora_minimo[AV3,PISTA4,4]
+                                   0        -10005               
+   277 Restriccion_hora_minimo[AV3,PISTA4,5]
+                                   0        -10020               
+   278 Restriccion_hora_minimo[AV3,PISTA4,6]
+                                   0        -10035               
+   279 Restriccion_hora_minimo[AV3,PISTA4,7]
+                                   0        -10050               
+   280 Restriccion_hora_minimo[AV4,PISTA1,1]
+                                   0         -9945               
+   281 Restriccion_hora_minimo[AV4,PISTA1,2]
+                                   0         -9960               
+   282 Restriccion_hora_minimo[AV4,PISTA1,3]
+                                   0         -9975               
+   283 Restriccion_hora_minimo[AV4,PISTA1,4]
+                                   0         -9990               
+   284 Restriccion_hora_minimo[AV4,PISTA1,5]
+                              -10000        -10005               
+   285 Restriccion_hora_minimo[AV4,PISTA1,6]
+                                   0        -10020               
+   286 Restriccion_hora_minimo[AV4,PISTA1,7]
+                                   0        -10035               
+   287 Restriccion_hora_minimo[AV4,PISTA2,1]
+                                   0         -9945               
+   288 Restriccion_hora_minimo[AV4,PISTA2,2]
+                                   0         -9960               
+   289 Restriccion_hora_minimo[AV4,PISTA2,3]
+                                   0         -9975               
+   290 Restriccion_hora_minimo[AV4,PISTA2,4]
+                                   0         -9990               
+   291 Restriccion_hora_minimo[AV4,PISTA2,5]
+                                   0        -10005               
+   292 Restriccion_hora_minimo[AV4,PISTA2,6]
+                                   0        -10020               
+   293 Restriccion_hora_minimo[AV4,PISTA2,7]
+                                   0        -10035               
+   294 Restriccion_hora_minimo[AV4,PISTA3,1]
+                                   0         -9945               
+   295 Restriccion_hora_minimo[AV4,PISTA3,2]
+                                   0         -9960               
+   296 Restriccion_hora_minimo[AV4,PISTA3,3]
+                                   0         -9975               
+   297 Restriccion_hora_minimo[AV4,PISTA3,4]
+                                   0         -9990               
+   298 Restriccion_hora_minimo[AV4,PISTA3,5]
+                                   0        -10005               
+   299 Restriccion_hora_minimo[AV4,PISTA3,6]
+                                   0        -10020               
+   300 Restriccion_hora_minimo[AV4,PISTA3,7]
+                                   0        -10035               
+   301 Restriccion_hora_minimo[AV4,PISTA4,1]
+                                   0         -9945               
+   302 Restriccion_hora_minimo[AV4,PISTA4,2]
+                                   0         -9960               
+   303 Restriccion_hora_minimo[AV4,PISTA4,3]
+                                   0         -9975               
+   304 Restriccion_hora_minimo[AV4,PISTA4,4]
+                                   0         -9990               
+   305 Restriccion_hora_minimo[AV4,PISTA4,5]
+                                   0        -10005               
+   306 Restriccion_hora_minimo[AV4,PISTA4,6]
+                                   0        -10020               
+   307 Restriccion_hora_minimo[AV4,PISTA4,7]
+                                   0        -10035               
+   308 Restriccion_hora_minimo[AV5,PISTA1,1]
+                                   0         -9930               
+   309 Restriccion_hora_minimo[AV5,PISTA1,2]
+                                   0         -9945               
+   310 Restriccion_hora_minimo[AV5,PISTA1,3]
+                                   0         -9960               
+   311 Restriccion_hora_minimo[AV5,PISTA1,4]
+                                   0         -9975               
+   312 Restriccion_hora_minimo[AV5,PISTA1,5]
+                                   0         -9990               
+   313 Restriccion_hora_minimo[AV5,PISTA1,6]
+                                   0        -10005               
+   314 Restriccion_hora_minimo[AV5,PISTA1,7]
+                                   0        -10020               
+   315 Restriccion_hora_minimo[AV5,PISTA2,1]
+                                   0         -9930               
+   316 Restriccion_hora_minimo[AV5,PISTA2,2]
+                                   0         -9945               
+   317 Restriccion_hora_minimo[AV5,PISTA2,3]
+                                   0         -9960               
+   318 Restriccion_hora_minimo[AV5,PISTA2,4]
+                                   0         -9975               
+   319 Restriccion_hora_minimo[AV5,PISTA2,5]
+                                   0         -9990               
+   320 Restriccion_hora_minimo[AV5,PISTA2,6]
+                                   0        -10005               
+   321 Restriccion_hora_minimo[AV5,PISTA2,7]
+                                   0        -10020               
+   322 Restriccion_hora_minimo[AV5,PISTA3,1]
+                                   0         -9930               
+   323 Restriccion_hora_minimo[AV5,PISTA3,2]
+                                   0         -9945               
+   324 Restriccion_hora_minimo[AV5,PISTA3,3]
+                                   0         -9960               
+   325 Restriccion_hora_minimo[AV5,PISTA3,4]
+                                   0         -9975               
+   326 Restriccion_hora_minimo[AV5,PISTA3,5]
+                                   0         -9990               
+   327 Restriccion_hora_minimo[AV5,PISTA3,6]
+                                   0        -10005               
+   328 Restriccion_hora_minimo[AV5,PISTA3,7]
+                                   0        -10020               
+   329 Restriccion_hora_minimo[AV5,PISTA4,1]
+                                   0         -9930               
+   330 Restriccion_hora_minimo[AV5,PISTA4,2]
+                                   0         -9945               
+   331 Restriccion_hora_minimo[AV5,PISTA4,3]
+                                   0         -9960               
+   332 Restriccion_hora_minimo[AV5,PISTA4,4]
+                                   0         -9975               
+   333 Restriccion_hora_minimo[AV5,PISTA4,5]
+                                   0         -9990               
+   334 Restriccion_hora_minimo[AV5,PISTA4,6]
+                              -10000        -10005               
+   335 Restriccion_hora_minimo[AV5,PISTA4,7]
+                                   0        -10020               
+   336 Restriccion_hora_maximo[AV1,PISTA1,1]
+                                   0                       10075 
+   337 Restriccion_hora_maximo[AV1,PISTA1,2]
+                                   0                       10060 
+   338 Restriccion_hora_maximo[AV1,PISTA1,3]
+                                   0                       10045 
+   339 Restriccion_hora_maximo[AV1,PISTA1,4]
+                                   0                       10030 
+   340 Restriccion_hora_maximo[AV1,PISTA1,5]
+                                   0                       10015 
+   341 Restriccion_hora_maximo[AV1,PISTA1,6]
+                                   0                       10000 
+   342 Restriccion_hora_maximo[AV1,PISTA1,7]
+                                   0                        9985 
+   343 Restriccion_hora_maximo[AV1,PISTA2,1]
+                                   0                       10075 
+   344 Restriccion_hora_maximo[AV1,PISTA2,2]
+                                   0                       10060 
+   345 Restriccion_hora_maximo[AV1,PISTA2,3]
+                                   0                       10045 
+   346 Restriccion_hora_maximo[AV1,PISTA2,4]
+                                   0                       10030 
+   347 Restriccion_hora_maximo[AV1,PISTA2,5]
+                                   0                       10015 
+   348 Restriccion_hora_maximo[AV1,PISTA2,6]
+                                   0                       10000 
+   349 Restriccion_hora_maximo[AV1,PISTA2,7]
+                                   0                        9985 
+   350 Restriccion_hora_maximo[AV1,PISTA3,1]
+                                   0                       10075 
+   351 Restriccion_hora_maximo[AV1,PISTA3,2]
+                               10000                       10060 
+   352 Restriccion_hora_maximo[AV1,PISTA3,3]
+                                   0                       10045 
+   353 Restriccion_hora_maximo[AV1,PISTA3,4]
+                                   0                       10030 
+   354 Restriccion_hora_maximo[AV1,PISTA3,5]
+                                   0                       10015 
+   355 Restriccion_hora_maximo[AV1,PISTA3,6]
+                                   0                       10000 
+   356 Restriccion_hora_maximo[AV1,PISTA3,7]
+                                   0                        9985 
+   357 Restriccion_hora_maximo[AV1,PISTA4,1]
+                                   0                       10075 
+   358 Restriccion_hora_maximo[AV1,PISTA4,2]
+                                   0                       10060 
+   359 Restriccion_hora_maximo[AV1,PISTA4,3]
+                                   0                       10045 
+   360 Restriccion_hora_maximo[AV1,PISTA4,4]
+                                   0                       10030 
+   361 Restriccion_hora_maximo[AV1,PISTA4,5]
+                                   0                       10015 
+   362 Restriccion_hora_maximo[AV1,PISTA4,6]
+                                   0                       10000 
+   363 Restriccion_hora_maximo[AV1,PISTA4,7]
+                                   0                        9985 
+   364 Restriccion_hora_maximo[AV2,PISTA1,1]
+                                   0                       10030 
+   365 Restriccion_hora_maximo[AV2,PISTA1,2]
+                                   0                       10015 
+   366 Restriccion_hora_maximo[AV2,PISTA1,3]
+                                   0                       10000 
+   367 Restriccion_hora_maximo[AV2,PISTA1,4]
+                                   0                        9985 
+   368 Restriccion_hora_maximo[AV2,PISTA1,5]
+                                   0                        9970 
+   369 Restriccion_hora_maximo[AV2,PISTA1,6]
+                                   0                        9955 
+   370 Restriccion_hora_maximo[AV2,PISTA1,7]
+                                   0                        9940 
+   371 Restriccion_hora_maximo[AV2,PISTA2,1]
+                                   0                       10030 
+   372 Restriccion_hora_maximo[AV2,PISTA2,2]
+                                   0                       10015 
+   373 Restriccion_hora_maximo[AV2,PISTA2,3]
+                                   0                       10000 
+   374 Restriccion_hora_maximo[AV2,PISTA2,4]
+                                   0                        9985 
+   375 Restriccion_hora_maximo[AV2,PISTA2,5]
+                                   0                        9970 
+   376 Restriccion_hora_maximo[AV2,PISTA2,6]
+                                   0                        9955 
+   377 Restriccion_hora_maximo[AV2,PISTA2,7]
+                                   0                        9940 
+   378 Restriccion_hora_maximo[AV2,PISTA3,1]
+                                   0                       10030 
+   379 Restriccion_hora_maximo[AV2,PISTA3,2]
+                                   0                       10015 
+   380 Restriccion_hora_maximo[AV2,PISTA3,3]
+                                   0                       10000 
+   381 Restriccion_hora_maximo[AV2,PISTA3,4]
+                                   0                        9985 
+   382 Restriccion_hora_maximo[AV2,PISTA3,5]
+                                   0                        9970 
+   383 Restriccion_hora_maximo[AV2,PISTA3,6]
+                                   0                        9955 
+   384 Restriccion_hora_maximo[AV2,PISTA3,7]
+                                   0                        9940 
+   385 Restriccion_hora_maximo[AV2,PISTA4,1]
+                               10000                       10030 
+   386 Restriccion_hora_maximo[AV2,PISTA4,2]
+                                   0                       10015 
+   387 Restriccion_hora_maximo[AV2,PISTA4,3]
+                                   0                       10000 
+   388 Restriccion_hora_maximo[AV2,PISTA4,4]
+                                   0                        9985 
+   389 Restriccion_hora_maximo[AV2,PISTA4,5]
+                                   0                        9970 
+   390 Restriccion_hora_maximo[AV2,PISTA4,6]
+                                   0                        9955 
+   391 Restriccion_hora_maximo[AV2,PISTA4,7]
+                                   0                        9940 
+   392 Restriccion_hora_maximo[AV3,PISTA1,1]
+                                   0                       10060 
+   393 Restriccion_hora_maximo[AV3,PISTA1,2]
+                                   0                       10045 
+   394 Restriccion_hora_maximo[AV3,PISTA1,3]
+                                   0                       10030 
+   395 Restriccion_hora_maximo[AV3,PISTA1,4]
+                                   0                       10015 
+   396 Restriccion_hora_maximo[AV3,PISTA1,5]
+                                   0                       10000 
+   397 Restriccion_hora_maximo[AV3,PISTA1,6]
+                                   0                        9985 
+   398 Restriccion_hora_maximo[AV3,PISTA1,7]
+                                   0                        9970 
+   399 Restriccion_hora_maximo[AV3,PISTA2,1]
+                                   0                       10060 
+   400 Restriccion_hora_maximo[AV3,PISTA2,2]
+                                   0                       10045 
+   401 Restriccion_hora_maximo[AV3,PISTA2,3]
+                                   0                       10030 
+   402 Restriccion_hora_maximo[AV3,PISTA2,4]
+                               10000                       10015 
+   403 Restriccion_hora_maximo[AV3,PISTA2,5]
+                                   0                       10000 
+   404 Restriccion_hora_maximo[AV3,PISTA2,6]
+                                   0                        9985 
+   405 Restriccion_hora_maximo[AV3,PISTA2,7]
+                                   0                        9970 
+   406 Restriccion_hora_maximo[AV3,PISTA3,1]
+                                   0                       10060 
+   407 Restriccion_hora_maximo[AV3,PISTA3,2]
+                                   0                       10045 
+   408 Restriccion_hora_maximo[AV3,PISTA3,3]
+                                   0                       10030 
+   409 Restriccion_hora_maximo[AV3,PISTA3,4]
+                                   0                       10015 
+   410 Restriccion_hora_maximo[AV3,PISTA3,5]
+                                   0                       10000 
+   411 Restriccion_hora_maximo[AV3,PISTA3,6]
+                                   0                        9985 
+   412 Restriccion_hora_maximo[AV3,PISTA3,7]
+                                   0                        9970 
+   413 Restriccion_hora_maximo[AV3,PISTA4,1]
+                                   0                       10060 
+   414 Restriccion_hora_maximo[AV3,PISTA4,2]
+                                   0                       10045 
+   415 Restriccion_hora_maximo[AV3,PISTA4,3]
+                                   0                       10030 
+   416 Restriccion_hora_maximo[AV3,PISTA4,4]
+                                   0                       10015 
+   417 Restriccion_hora_maximo[AV3,PISTA4,5]
+                                   0                       10000 
+   418 Restriccion_hora_maximo[AV3,PISTA4,6]
+                                   0                        9985 
+   419 Restriccion_hora_maximo[AV3,PISTA4,7]
+                                   0                        9970 
+   420 Restriccion_hora_maximo[AV4,PISTA1,1]
+                                   0                       10075 
+   421 Restriccion_hora_maximo[AV4,PISTA1,2]
+                                   0                       10060 
+   422 Restriccion_hora_maximo[AV4,PISTA1,3]
+                                   0                       10045 
+   423 Restriccion_hora_maximo[AV4,PISTA1,4]
+                                   0                       10030 
+   424 Restriccion_hora_maximo[AV4,PISTA1,5]
+                               10000                       10015 
+   425 Restriccion_hora_maximo[AV4,PISTA1,6]
+                                   0                       10000 
+   426 Restriccion_hora_maximo[AV4,PISTA1,7]
+                                   0                        9985 
+   427 Restriccion_hora_maximo[AV4,PISTA2,1]
+                                   0                       10075 
+   428 Restriccion_hora_maximo[AV4,PISTA2,2]
+                                   0                       10060 
+   429 Restriccion_hora_maximo[AV4,PISTA2,3]
+                                   0                       10045 
+   430 Restriccion_hora_maximo[AV4,PISTA2,4]
+                                   0                       10030 
+   431 Restriccion_hora_maximo[AV4,PISTA2,5]
+                                   0                       10015 
+   432 Restriccion_hora_maximo[AV4,PISTA2,6]
+                                   0                       10000 
+   433 Restriccion_hora_maximo[AV4,PISTA2,7]
+                                   0                        9985 
+   434 Restriccion_hora_maximo[AV4,PISTA3,1]
+                                   0                       10075 
+   435 Restriccion_hora_maximo[AV4,PISTA3,2]
+                                   0                       10060 
+   436 Restriccion_hora_maximo[AV4,PISTA3,3]
+                                   0                       10045 
+   437 Restriccion_hora_maximo[AV4,PISTA3,4]
+                                   0                       10030 
+   438 Restriccion_hora_maximo[AV4,PISTA3,5]
+                                   0                       10015 
+   439 Restriccion_hora_maximo[AV4,PISTA3,6]
+                                   0                       10000 
+   440 Restriccion_hora_maximo[AV4,PISTA3,7]
+                                   0                        9985 
+   441 Restriccion_hora_maximo[AV4,PISTA4,1]
+                                   0                       10075 
+   442 Restriccion_hora_maximo[AV4,PISTA4,2]
+                                   0                       10060 
+   443 Restriccion_hora_maximo[AV4,PISTA4,3]
+                                   0                       10045 
+   444 Restriccion_hora_maximo[AV4,PISTA4,4]
+                                   0                       10030 
+   445 Restriccion_hora_maximo[AV4,PISTA4,5]
+                                   0                       10015 
+   446 Restriccion_hora_maximo[AV4,PISTA4,6]
+                                   0                       10000 
+   447 Restriccion_hora_maximo[AV4,PISTA4,7]
+                                   0                        9985 
+   448 Restriccion_hora_maximo[AV5,PISTA1,1]
+                                   0                       10090 
+   449 Restriccion_hora_maximo[AV5,PISTA1,2]
+                                   0                       10075 
+   450 Restriccion_hora_maximo[AV5,PISTA1,3]
+                                   0                       10060 
+   451 Restriccion_hora_maximo[AV5,PISTA1,4]
+                                   0                       10045 
+   452 Restriccion_hora_maximo[AV5,PISTA1,5]
+                                   0                       10030 
+   453 Restriccion_hora_maximo[AV5,PISTA1,6]
+                                   0                       10015 
+   454 Restriccion_hora_maximo[AV5,PISTA1,7]
+                                   0                       10000 
+   455 Restriccion_hora_maximo[AV5,PISTA2,1]
+                                   0                       10090 
+   456 Restriccion_hora_maximo[AV5,PISTA2,2]
+                                   0                       10075 
+   457 Restriccion_hora_maximo[AV5,PISTA2,3]
+                                   0                       10060 
+   458 Restriccion_hora_maximo[AV5,PISTA2,4]
+                                   0                       10045 
+   459 Restriccion_hora_maximo[AV5,PISTA2,5]
+                                   0                       10030 
+   460 Restriccion_hora_maximo[AV5,PISTA2,6]
+                                   0                       10015 
+   461 Restriccion_hora_maximo[AV5,PISTA2,7]
+                                   0                       10000 
+   462 Restriccion_hora_maximo[AV5,PISTA3,1]
+                                   0                       10090 
+   463 Restriccion_hora_maximo[AV5,PISTA3,2]
+                                   0                       10075 
+   464 Restriccion_hora_maximo[AV5,PISTA3,3]
+                                   0                       10060 
+   465 Restriccion_hora_maximo[AV5,PISTA3,4]
+                                   0                       10045 
+   466 Restriccion_hora_maximo[AV5,PISTA3,5]
+                                   0                       10030 
+   467 Restriccion_hora_maximo[AV5,PISTA3,6]
+                                   0                       10015 
+   468 Restriccion_hora_maximo[AV5,PISTA3,7]
+                                   0                       10000 
+   469 Restriccion_hora_maximo[AV5,PISTA4,1]
+                                   0                       10090 
+   470 Restriccion_hora_maximo[AV5,PISTA4,2]
+                                   0                       10075 
+   471 Restriccion_hora_maximo[AV5,PISTA4,3]
+                                   0                       10060 
+   472 Restriccion_hora_maximo[AV5,PISTA4,4]
+                                   0                       10045 
+   473 Restriccion_hora_maximo[AV5,PISTA4,5]
+                                   0                       10030 
+   474 Restriccion_hora_maximo[AV5,PISTA4,6]
+                               10000                       10015 
+   475 Restriccion_hora_maximo[AV5,PISTA4,7]
+                                   0                       10000 
+   476 Restriccion_slots_consecutivos[AV1,PISTA1,1]
+                                   0                           1 
+   477 Restriccion_slots_consecutivos[AV1,PISTA1,2]
+                                   0                           1 
+   478 Restriccion_slots_consecutivos[AV1,PISTA1,3]
+                                   0                           1 
+   479 Restriccion_slots_consecutivos[AV1,PISTA1,4]
+                                   0                           1 
+   480 Restriccion_slots_consecutivos[AV1,PISTA1,5]
+                                   0                           1 
+   481 Restriccion_slots_consecutivos[AV1,PISTA1,6]
+                                   0                           1 
+   482 Restriccion_slots_consecutivos[AV1,PISTA2,1]
+                                   0                           1 
+   483 Restriccion_slots_consecutivos[AV1,PISTA2,2]
+                                   0                           1 
+   484 Restriccion_slots_consecutivos[AV1,PISTA2,3]
+                                   0                           1 
+   485 Restriccion_slots_consecutivos[AV1,PISTA2,4]
+                                   0                           1 
+   486 Restriccion_slots_consecutivos[AV1,PISTA2,5]
+                                   0                           1 
+   487 Restriccion_slots_consecutivos[AV1,PISTA2,6]
+                                   0                           1 
+   488 Restriccion_slots_consecutivos[AV1,PISTA3,1]
+                                   1                           1 
+   489 Restriccion_slots_consecutivos[AV1,PISTA3,2]
+                                   1                           1 
+   490 Restriccion_slots_consecutivos[AV1,PISTA3,3]
+                                   0                           1 
+   491 Restriccion_slots_consecutivos[AV1,PISTA3,4]
+                                   0                           1 
+   492 Restriccion_slots_consecutivos[AV1,PISTA3,5]
+                                   0                           1 
+   493 Restriccion_slots_consecutivos[AV1,PISTA3,6]
+                                   0                           1 
+   494 Restriccion_slots_consecutivos[AV1,PISTA4,1]
+                                   0                           1 
+   495 Restriccion_slots_consecutivos[AV1,PISTA4,2]
+                                   0                           1 
+   496 Restriccion_slots_consecutivos[AV1,PISTA4,3]
+                                   0                           1 
+   497 Restriccion_slots_consecutivos[AV1,PISTA4,4]
+                                   0                           1 
+   498 Restriccion_slots_consecutivos[AV1,PISTA4,5]
+                                   0                           1 
+   499 Restriccion_slots_consecutivos[AV1,PISTA4,6]
+                                   0                           1 
+   500 Restriccion_slots_consecutivos[AV2,PISTA1,1]
+                                   0                           1 
+   501 Restriccion_slots_consecutivos[AV2,PISTA1,2]
+                                   0                           1 
+   502 Restriccion_slots_consecutivos[AV2,PISTA1,3]
+                                   0                           1 
+   503 Restriccion_slots_consecutivos[AV2,PISTA1,4]
+                                   0                           1 
+   504 Restriccion_slots_consecutivos[AV2,PISTA1,5]
+                                   0                           1 
+   505 Restriccion_slots_consecutivos[AV2,PISTA1,6]
+                                   0                           1 
+   506 Restriccion_slots_consecutivos[AV2,PISTA2,1]
+                                   0                           1 
+   507 Restriccion_slots_consecutivos[AV2,PISTA2,2]
+                                   0                           1 
+   508 Restriccion_slots_consecutivos[AV2,PISTA2,3]
+                                   0                           1 
+   509 Restriccion_slots_consecutivos[AV2,PISTA2,4]
+                                   0                           1 
+   510 Restriccion_slots_consecutivos[AV2,PISTA2,5]
+                                   0                           1 
+   511 Restriccion_slots_consecutivos[AV2,PISTA2,6]
+                                   0                           1 
+   512 Restriccion_slots_consecutivos[AV2,PISTA3,1]
+                                   0                           1 
+   513 Restriccion_slots_consecutivos[AV2,PISTA3,2]
+                                   0                           1 
+   514 Restriccion_slots_consecutivos[AV2,PISTA3,3]
+                                   0                           1 
+   515 Restriccion_slots_consecutivos[AV2,PISTA3,4]
+                                   0                           1 
+   516 Restriccion_slots_consecutivos[AV2,PISTA3,5]
+                                   0                           1 
+   517 Restriccion_slots_consecutivos[AV2,PISTA3,6]
+                                   0                           1 
+   518 Restriccion_slots_consecutivos[AV2,PISTA4,1]
+                                   1                           1 
+   519 Restriccion_slots_consecutivos[AV2,PISTA4,2]
+                                   0                           1 
+   520 Restriccion_slots_consecutivos[AV2,PISTA4,3]
+                                   0                           1 
+   521 Restriccion_slots_consecutivos[AV2,PISTA4,4]
+                                   0                           1 
+   522 Restriccion_slots_consecutivos[AV2,PISTA4,5]
+                                   0                           1 
+   523 Restriccion_slots_consecutivos[AV2,PISTA4,6]
+                                   0                           1 
+   524 Restriccion_slots_consecutivos[AV3,PISTA1,1]
+                                   0                           1 
+   525 Restriccion_slots_consecutivos[AV3,PISTA1,2]
+                                   0                           1 
+   526 Restriccion_slots_consecutivos[AV3,PISTA1,3]
+                                   0                           1 
+   527 Restriccion_slots_consecutivos[AV3,PISTA1,4]
+                                   0                           1 
+   528 Restriccion_slots_consecutivos[AV3,PISTA1,5]
+                                   0                           1 
+   529 Restriccion_slots_consecutivos[AV3,PISTA1,6]
+                                   0                           1 
+   530 Restriccion_slots_consecutivos[AV3,PISTA2,1]
+                                   0                           1 
+   531 Restriccion_slots_consecutivos[AV3,PISTA2,2]
+                                   0                           1 
+   532 Restriccion_slots_consecutivos[AV3,PISTA2,3]
+                                   1                           1 
+   533 Restriccion_slots_consecutivos[AV3,PISTA2,4]
+                                   1                           1 
+   534 Restriccion_slots_consecutivos[AV3,PISTA2,5]
+                                   0                           1 
+   535 Restriccion_slots_consecutivos[AV3,PISTA2,6]
+                                   0                           1 
+   536 Restriccion_slots_consecutivos[AV3,PISTA3,1]
+                                   0                           1 
+   537 Restriccion_slots_consecutivos[AV3,PISTA3,2]
+                                   0                           1 
+   538 Restriccion_slots_consecutivos[AV3,PISTA3,3]
+                                   0                           1 
+   539 Restriccion_slots_consecutivos[AV3,PISTA3,4]
+                                   0                           1 
+   540 Restriccion_slots_consecutivos[AV3,PISTA3,5]
+                                   0                           1 
+   541 Restriccion_slots_consecutivos[AV3,PISTA3,6]
+                                   0                           1 
+   542 Restriccion_slots_consecutivos[AV3,PISTA4,1]
+                                   0                           1 
+   543 Restriccion_slots_consecutivos[AV3,PISTA4,2]
+                                   0                           1 
+   544 Restriccion_slots_consecutivos[AV3,PISTA4,3]
+                                   0                           1 
+   545 Restriccion_slots_consecutivos[AV3,PISTA4,4]
+                                   0                           1 
+   546 Restriccion_slots_consecutivos[AV3,PISTA4,5]
+                                   0                           1 
+   547 Restriccion_slots_consecutivos[AV3,PISTA4,6]
+                                   0                           1 
+   548 Restriccion_slots_consecutivos[AV4,PISTA1,1]
+                                   0                           1 
+   549 Restriccion_slots_consecutivos[AV4,PISTA1,2]
+                                   0                           1 
+   550 Restriccion_slots_consecutivos[AV4,PISTA1,3]
+                                   0                           1 
+   551 Restriccion_slots_consecutivos[AV4,PISTA1,4]
+                                   1                           1 
+   552 Restriccion_slots_consecutivos[AV4,PISTA1,5]
+                                   1                           1 
+   553 Restriccion_slots_consecutivos[AV4,PISTA1,6]
+                                   0                           1 
+   554 Restriccion_slots_consecutivos[AV4,PISTA2,1]
+                                   0                           1 
+   555 Restriccion_slots_consecutivos[AV4,PISTA2,2]
+                                   0                           1 
+   556 Restriccion_slots_consecutivos[AV4,PISTA2,3]
+                                   0                           1 
+   557 Restriccion_slots_consecutivos[AV4,PISTA2,4]
+                                   0                           1 
+   558 Restriccion_slots_consecutivos[AV4,PISTA2,5]
+                                   0                           1 
+   559 Restriccion_slots_consecutivos[AV4,PISTA2,6]
+                                   0                           1 
+   560 Restriccion_slots_consecutivos[AV4,PISTA3,1]
+                                   0                           1 
+   561 Restriccion_slots_consecutivos[AV4,PISTA3,2]
+                                   0                           1 
+   562 Restriccion_slots_consecutivos[AV4,PISTA3,3]
+                                   0                           1 
+   563 Restriccion_slots_consecutivos[AV4,PISTA3,4]
+                                   0                           1 
+   564 Restriccion_slots_consecutivos[AV4,PISTA3,5]
+                                   0                           1 
+   565 Restriccion_slots_consecutivos[AV4,PISTA3,6]
+                                   0                           1 
+   566 Restriccion_slots_consecutivos[AV4,PISTA4,1]
+                                   0                           1 
+   567 Restriccion_slots_consecutivos[AV4,PISTA4,2]
+                                   0                           1 
+   568 Restriccion_slots_consecutivos[AV4,PISTA4,3]
+                                   0                           1 
+   569 Restriccion_slots_consecutivos[AV4,PISTA4,4]
+                                   0                           1 
+   570 Restriccion_slots_consecutivos[AV4,PISTA4,5]
+                                   0                           1 
+   571 Restriccion_slots_consecutivos[AV4,PISTA4,6]
+                                   0                           1 
+   572 Restriccion_slots_consecutivos[AV5,PISTA1,1]
+                                   0                           1 
+   573 Restriccion_slots_consecutivos[AV5,PISTA1,2]
+                                   0                           1 
+   574 Restriccion_slots_consecutivos[AV5,PISTA1,3]
+                                   0                           1 
+   575 Restriccion_slots_consecutivos[AV5,PISTA1,4]
+                                   0                           1 
+   576 Restriccion_slots_consecutivos[AV5,PISTA1,5]
+                                   0                           1 
+   577 Restriccion_slots_consecutivos[AV5,PISTA1,6]
+                                   0                           1 
+   578 Restriccion_slots_consecutivos[AV5,PISTA2,1]
+                                   0                           1 
+   579 Restriccion_slots_consecutivos[AV5,PISTA2,2]
+                                   0                           1 
+   580 Restriccion_slots_consecutivos[AV5,PISTA2,3]
+                                   0                           1 
+   581 Restriccion_slots_consecutivos[AV5,PISTA2,4]
+                                   0                           1 
+   582 Restriccion_slots_consecutivos[AV5,PISTA2,5]
+                                   0                           1 
+   583 Restriccion_slots_consecutivos[AV5,PISTA2,6]
+                                   0                           1 
+   584 Restriccion_slots_consecutivos[AV5,PISTA3,1]
+                                   0                           1 
+   585 Restriccion_slots_consecutivos[AV5,PISTA3,2]
+                                   0                           1 
+   586 Restriccion_slots_consecutivos[AV5,PISTA3,3]
+                                   0                           1 
+   587 Restriccion_slots_consecutivos[AV5,PISTA3,4]
+                                   0                           1 
+   588 Restriccion_slots_consecutivos[AV5,PISTA3,5]
+                                   0                           1 
+   589 Restriccion_slots_consecutivos[AV5,PISTA3,6]
+                                   0                           1 
+   590 Restriccion_slots_consecutivos[AV5,PISTA4,1]
+                                   0                           1 
+   591 Restriccion_slots_consecutivos[AV5,PISTA4,2]
+                                   0                           1 
+   592 Restriccion_slots_consecutivos[AV5,PISTA4,3]
+                                   0                           1 
+   593 Restriccion_slots_consecutivos[AV5,PISTA4,4]
+                                   0                           1 
+   594 Restriccion_slots_consecutivos[AV5,PISTA4,5]
+                                   1                           1 
+   595 Restriccion_slots_consecutivos[AV5,PISTA4,6]
+                                   1                           1 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 disponible[AV1,PISTA1,1]
+                    *              0             0             1 
+     2 disponible[AV1,PISTA1,2]
+                    *              0             0             1 
+     3 disponible[AV1,PISTA1,3]
+                    *              0             0             1 
+     4 disponible[AV1,PISTA1,4]
+                    *              0             0             1 
+     5 disponible[AV1,PISTA1,5]
+                    *              0             0             1 
+     6 disponible[AV1,PISTA1,6]
+                    *              0             0             1 
+     7 disponible[AV1,PISTA1,7]
+                    *              0             0             1 
+     8 disponible[AV1,PISTA2,1]
+                    *              0             0             1 
+     9 disponible[AV1,PISTA2,2]
+                    *              0             0             1 
+    10 disponible[AV1,PISTA2,3]
+                    *              0             0             1 
+    11 disponible[AV1,PISTA2,4]
+                    *              0             0             1 
+    12 disponible[AV1,PISTA2,5]
+                    *              0             0             1 
+    13 disponible[AV1,PISTA2,6]
+                    *              0             0             1 
+    14 disponible[AV1,PISTA2,7]
+                    *              0             0             1 
+    15 disponible[AV1,PISTA3,1]
+                    *              0             0             1 
+    16 disponible[AV1,PISTA3,2]
+                    *              1             0             1 
+    17 disponible[AV1,PISTA3,3]
+                    *              0             0             1 
+    18 disponible[AV1,PISTA3,4]
+                    *              0             0             1 
+    19 disponible[AV1,PISTA3,5]
+                    *              0             0             1 
+    20 disponible[AV1,PISTA3,6]
+                    *              0             0             1 
+    21 disponible[AV1,PISTA3,7]
+                    *              0             0             1 
+    22 disponible[AV1,PISTA4,1]
+                    *              0             0             1 
+    23 disponible[AV1,PISTA4,2]
+                    *              0             0             1 
+    24 disponible[AV1,PISTA4,3]
+                    *              0             0             1 
+    25 disponible[AV1,PISTA4,4]
+                    *              0             0             1 
+    26 disponible[AV1,PISTA4,5]
+                    *              0             0             1 
+    27 disponible[AV1,PISTA4,6]
+                    *              0             0             1 
+    28 disponible[AV1,PISTA4,7]
+                    *              0             0             1 
+    29 disponible[AV2,PISTA1,1]
+                    *              0             0             1 
+    30 disponible[AV2,PISTA1,2]
+                    *              0             0             1 
+    31 disponible[AV2,PISTA1,3]
+                    *              0             0             1 
+    32 disponible[AV2,PISTA1,4]
+                    *              0             0             1 
+    33 disponible[AV2,PISTA1,5]
+                    *              0             0             1 
+    34 disponible[AV2,PISTA1,6]
+                    *              0             0             1 
+    35 disponible[AV2,PISTA1,7]
+                    *              0             0             1 
+    36 disponible[AV2,PISTA2,1]
+                    *              0             0             1 
+    37 disponible[AV2,PISTA2,2]
+                    *              0             0             1 
+    38 disponible[AV2,PISTA2,3]
+                    *              0             0             1 
+    39 disponible[AV2,PISTA2,4]
+                    *              0             0             1 
+    40 disponible[AV2,PISTA2,5]
+                    *              0             0             1 
+    41 disponible[AV2,PISTA2,6]
+                    *              0             0             1 
+    42 disponible[AV2,PISTA2,7]
+                    *              0             0             1 
+    43 disponible[AV2,PISTA3,1]
+                    *              0             0             1 
+    44 disponible[AV2,PISTA3,2]
+                    *              0             0             1 
+    45 disponible[AV2,PISTA3,3]
+                    *              0             0             1 
+    46 disponible[AV2,PISTA3,4]
+                    *              0             0             1 
+    47 disponible[AV2,PISTA3,5]
+                    *              0             0             1 
+    48 disponible[AV2,PISTA3,6]
+                    *              0             0             1 
+    49 disponible[AV2,PISTA3,7]
+                    *              0             0             1 
+    50 disponible[AV2,PISTA4,1]
+                    *              1             0             1 
+    51 disponible[AV2,PISTA4,2]
+                    *              0             0             1 
+    52 disponible[AV2,PISTA4,3]
+                    *              0             0             1 
+    53 disponible[AV2,PISTA4,4]
+                    *              0             0             1 
+    54 disponible[AV2,PISTA4,5]
+                    *              0             0             1 
+    55 disponible[AV2,PISTA4,6]
+                    *              0             0             1 
+    56 disponible[AV2,PISTA4,7]
+                    *              0             0             1 
+    57 disponible[AV3,PISTA1,1]
+                    *              0             0             1 
+    58 disponible[AV3,PISTA1,2]
+                    *              0             0             1 
+    59 disponible[AV3,PISTA1,3]
+                    *              0             0             1 
+    60 disponible[AV3,PISTA1,4]
+                    *              0             0             1 
+    61 disponible[AV3,PISTA1,5]
+                    *              0             0             1 
+    62 disponible[AV3,PISTA1,6]
+                    *              0             0             1 
+    63 disponible[AV3,PISTA1,7]
+                    *              0             0             1 
+    64 disponible[AV3,PISTA2,1]
+                    *              0             0             1 
+    65 disponible[AV3,PISTA2,2]
+                    *              0             0             1 
+    66 disponible[AV3,PISTA2,3]
+                    *              0             0             1 
+    67 disponible[AV3,PISTA2,4]
+                    *              1             0             1 
+    68 disponible[AV3,PISTA2,5]
+                    *              0             0             1 
+    69 disponible[AV3,PISTA2,6]
+                    *              0             0             1 
+    70 disponible[AV3,PISTA2,7]
+                    *              0             0             1 
+    71 disponible[AV3,PISTA3,1]
+                    *              0             0             1 
+    72 disponible[AV3,PISTA3,2]
+                    *              0             0             1 
+    73 disponible[AV3,PISTA3,3]
+                    *              0             0             1 
+    74 disponible[AV3,PISTA3,4]
+                    *              0             0             1 
+    75 disponible[AV3,PISTA3,5]
+                    *              0             0             1 
+    76 disponible[AV3,PISTA3,6]
+                    *              0             0             1 
+    77 disponible[AV3,PISTA3,7]
+                    *              0             0             1 
+    78 disponible[AV3,PISTA4,1]
+                    *              0             0             1 
+    79 disponible[AV3,PISTA4,2]
+                    *              0             0             1 
+    80 disponible[AV3,PISTA4,3]
+                    *              0             0             1 
+    81 disponible[AV3,PISTA4,4]
+                    *              0             0             1 
+    82 disponible[AV3,PISTA4,5]
+                    *              0             0             1 
+    83 disponible[AV3,PISTA4,6]
+                    *              0             0             1 
+    84 disponible[AV3,PISTA4,7]
+                    *              0             0             1 
+    85 disponible[AV4,PISTA1,1]
+                    *              0             0             1 
+    86 disponible[AV4,PISTA1,2]
+                    *              0             0             1 
+    87 disponible[AV4,PISTA1,3]
+                    *              0             0             1 
+    88 disponible[AV4,PISTA1,4]
+                    *              0             0             1 
+    89 disponible[AV4,PISTA1,5]
+                    *              1             0             1 
+    90 disponible[AV4,PISTA1,6]
+                    *              0             0             1 
+    91 disponible[AV4,PISTA1,7]
+                    *              0             0             1 
+    92 disponible[AV4,PISTA2,1]
+                    *              0             0             1 
+    93 disponible[AV4,PISTA2,2]
+                    *              0             0             1 
+    94 disponible[AV4,PISTA2,3]
+                    *              0             0             1 
+    95 disponible[AV4,PISTA2,4]
+                    *              0             0             1 
+    96 disponible[AV4,PISTA2,5]
+                    *              0             0             1 
+    97 disponible[AV4,PISTA2,6]
+                    *              0             0             1 
+    98 disponible[AV4,PISTA2,7]
+                    *              0             0             1 
+    99 disponible[AV4,PISTA3,1]
+                    *              0             0             1 
+   100 disponible[AV4,PISTA3,2]
+                    *              0             0             1 
+   101 disponible[AV4,PISTA3,3]
+                    *              0             0             1 
+   102 disponible[AV4,PISTA3,4]
+                    *              0             0             1 
+   103 disponible[AV4,PISTA3,5]
+                    *              0             0             1 
+   104 disponible[AV4,PISTA3,6]
+                    *              0             0             1 
+   105 disponible[AV4,PISTA3,7]
+                    *              0             0             1 
+   106 disponible[AV4,PISTA4,1]
+                    *              0             0             1 
+   107 disponible[AV4,PISTA4,2]
+                    *              0             0             1 
+   108 disponible[AV4,PISTA4,3]
+                    *              0             0             1 
+   109 disponible[AV4,PISTA4,4]
+                    *              0             0             1 
+   110 disponible[AV4,PISTA4,5]
+                    *              0             0             1 
+   111 disponible[AV4,PISTA4,6]
+                    *              0             0             1 
+   112 disponible[AV4,PISTA4,7]
+                    *              0             0             1 
+   113 disponible[AV5,PISTA1,1]
+                    *              0             0             1 
+   114 disponible[AV5,PISTA1,2]
+                    *              0             0             1 
+   115 disponible[AV5,PISTA1,3]
+                    *              0             0             1 
+   116 disponible[AV5,PISTA1,4]
+                    *              0             0             1 
+   117 disponible[AV5,PISTA1,5]
+                    *              0             0             1 
+   118 disponible[AV5,PISTA1,6]
+                    *              0             0             1 
+   119 disponible[AV5,PISTA1,7]
+                    *              0             0             1 
+   120 disponible[AV5,PISTA2,1]
+                    *              0             0             1 
+   121 disponible[AV5,PISTA2,2]
+                    *              0             0             1 
+   122 disponible[AV5,PISTA2,3]
+                    *              0             0             1 
+   123 disponible[AV5,PISTA2,4]
+                    *              0             0             1 
+   124 disponible[AV5,PISTA2,5]
+                    *              0             0             1 
+   125 disponible[AV5,PISTA2,6]
+                    *              0             0             1 
+   126 disponible[AV5,PISTA2,7]
+                    *              0             0             1 
+   127 disponible[AV5,PISTA3,1]
+                    *              0             0             1 
+   128 disponible[AV5,PISTA3,2]
+                    *              0             0             1 
+   129 disponible[AV5,PISTA3,3]
+                    *              0             0             1 
+   130 disponible[AV5,PISTA3,4]
+                    *              0             0             1 
+   131 disponible[AV5,PISTA3,5]
+                    *              0             0             1 
+   132 disponible[AV5,PISTA3,6]
+                    *              0             0             1 
+   133 disponible[AV5,PISTA3,7]
+                    *              0             0             1 
+   134 disponible[AV5,PISTA4,1]
+                    *              0             0             1 
+   135 disponible[AV5,PISTA4,2]
+                    *              0             0             1 
+   136 disponible[AV5,PISTA4,3]
+                    *              0             0             1 
+   137 disponible[AV5,PISTA4,4]
+                    *              0             0             1 
+   138 disponible[AV5,PISTA4,5]
+                    *              0             0             1 
+   139 disponible[AV5,PISTA4,6]
+                    *              1             0             1 
+   140 disponible[AV5,PISTA4,7]
+                    *              0             0             1 
+   141 x[AV1,ESTANDAR]
+                    *             38             0               
+   142 x[AV1,LEISURE]
+                    *             21             0               
+   143 x[AV1,BUSINESS]
+                    *             31             0               
+   144 x[AV2,ESTANDAR]
+                    *             40             0               
+   145 x[AV2,LEISURE]
+                    *             27             0               
+   146 x[AV2,BUSINESS]
+                    *             53             0               
+   147 x[AV3,ESTANDAR]
+                    *            155             0               
+   148 x[AV3,LEISURE]
+                    *             33             0               
+   149 x[AV3,BUSINESS]
+                    *             12             0               
+   150 x[AV4,ESTANDAR]
+                    *            100             0               
+   151 x[AV4,LEISURE]
+                    *             20             0               
+   152 x[AV4,BUSINESS]
+                    *             30             0               
+   153 x[AV5,ESTANDAR]
+                    *            117             0               
+   154 x[AV5,LEISURE]
+                    *             52             0               
+   155 x[AV5,BUSINESS]
+                    *             21             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 2.84e-14 on row 22
+        max.rel.err = 7.87e-17 on row 22
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
